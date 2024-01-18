@@ -1,0 +1,31 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+
+//*Color Variables NICHT BOOTSTRAP
+
+$ColorGolden: #cda45d;
+
+//* Creation of Spacers 
+$spacer : 5px;
+
+$spacers : map-merge($spacers, (
+    0 : 0px ,
+    1 : $spacer*1 ,
+    2 : $spacer*2 ,
+    3 : $spacer*3 ,
+    4 : $spacer*4 ,
+    5 : $spacer*5 ,
+    6 : $spacer*6 ,
+    7 : $spacer*7 ,
+    8 : $spacer*8 ,
+    9 : $spacer*9 ,
+));
+
+//*Creation of colors in Bootstrap
+$couleur-perso : (
+    "golden": #cda45d,
+);
+
+$theme-colors : map-merge($theme-colors, $couleur-perso);
+
