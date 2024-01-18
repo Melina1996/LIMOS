@@ -12,26 +12,40 @@
 <body>
     <main>
 
-        <div class="my-container">
+        <div class="my-box">
+            <div class="my-box-container">
+                    <h1>Password Generator</h1>
+                    <div class="container-password">
+                        <input type="text">
+                        <button class="clipboard"><i class="fa-regular fa-clipboard"></i></button>
+                    </div>
 
-            <div class="each-logo">
-                <i class="fa-brands fa-twitter"></i>
-                <h2 id="firstH2"><span data-target="12000">0</span></h2>
-                <p>Twitter Followers</p>
+
+                <div class="my-options">
+                    <div class="my-option">
+                        <p>Password Length</p>
+                        <input type="number" id="quantity" name="quantity" min="1" max="20">
+                    </div>
+                    <div class="my-option">
+                        <label for="uppercase">Include uppercase letters</label>
+                        <input type="checkbox" id="uppercase" name="uppercase">
+                    </div>
+                    <div class="my-option">
+                        <label for="lowercase">Include lowercase letters</label>
+                        <input type="checkbox" id="lowercase" name="lowercase">
+                    </div>
+                    <div class="my-option">
+                        <label for="numbers">Include numbers</label>
+                        <input type="checkbox" id="numbers" name="numbers">
+                    </div>                    
+                    <div class="my-option">
+                        <label for="symbols">Include symbols</label>
+                        <input type="checkbox" id="symbols" name="symbols">
+                    </div>  
+
+                    <button>Generate Password</button>
+                </div>
             </div>
-
-            <div class="each-logo">
-                <i class="fa-brands fa-youtube"></i>
-                <h2 id="secondH2"><span data-target="5000">0</span></h2>
-                <p>YouTube Subscribers</p>
-            </div>
-
-            <div class="each-logo">
-                <i class="fa-brands fa-facebook"></i>
-                <h2 id="thirdH2"><span data-target="7500">0</span></h2>
-                <p>FaceBook Fans</p>
-            </div>
-
         </div>
 
     </main>  
