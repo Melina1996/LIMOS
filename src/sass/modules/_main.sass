@@ -7,21 +7,22 @@ main
     justify-content: center
     .my-box
         width: 350px
-        height: 350px
+        height: 400px
         background-color: #23225c
-        box-shadow: 0px 0px 5px 1px #48469f
+        box-shadow: 0px 0px 10px 10px #48469f
+        border-radius: 10px
 
         display: flex
         justify-content: center
         .my-box-container
             width: 90%
-            height: 350px
+            height: 400px
 
             display: flex
             flex-direction: column
             justify-content: center
             align-items: center
-            gap: 20px
+            gap: 25px
             h1
                 color: white
                 font-size: 25px
@@ -38,8 +39,8 @@ main
                 .my-password
                     width: 100%
                     height: 100%
-                    color: black
                     padding-left: 10px
+                    color: white
 
                     display: flex
                     align-items: center
@@ -48,7 +49,7 @@ main
                         padding: 0
                 .clipboard
                     font-size: 20px
-                    background-color: #2f1eb4
+                    background-color: #393a98 
                     padding-top: 5px
                     padding-bottom: 5px
                     padding-right: 7px
@@ -56,6 +57,7 @@ main
                     position: absolute
                     border: 1px solid transparent  
                     margin-right: 5px
+                    border-radius: 5px
                     
                     display: flex
                     align-items: center
@@ -68,7 +70,7 @@ main
 
                 display: flex
                 flex-direction: column
-                gap: 7px
+                gap: 10px
                 .my-option
                     display: flex
                     align-items: center
@@ -82,13 +84,24 @@ main
                     input
                         position: absolute
                         right: 0
+                    input:focus
+                        outline: none
+                    input[type="checkbox"]
+                        accent-color: black 
                 button
                     width: 100%
                     border: 1px solid transparent 
                     background-color: #393a98 
                     color: white
-                    padding-top: 5px
-                    padding-bottom: 5px
+                    margin-top: 15px
+                    padding-top: 10px
+                    padding-bottom: 10px
+                    font-size: 17px
+                    border-radius: 10px
+                button:hover
+                    box-shadow: 0px 0px 10px 1px white
+
+
 
 
 
