@@ -70,14 +70,25 @@ function password(){
 
 //event listener for my button that calls my two functions and shows in the end the password
 myBtn.addEventListener("click",()=>{
+    //emtpy my variables for the next round
+    allOptions = []
+    myPassword = ""
     passwordLength = document.querySelector("input[type=number]").value
     console.log(passwordLength)
     checkBoxes()
     password()
     //show new created password
     inputWithPassword.innerText = myPassword
-    //emtpy my variables for the next round
-    allOptions = []
-    myPassword = ""
 })
+
+//there seems to be a problem: Document is not focused
+function clipboard() {
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(myPassword);
+
+  // Alert the copied text
+  alert("Copied the text: " + myPassword);
+
+}
 
