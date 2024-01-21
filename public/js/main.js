@@ -88,7 +88,7 @@ function clipboard() {
   navigator.clipboard.writeText(myPassword);
 
   // Alert the copied text
-  alert("Copied the text: " + myPassword);
+  alert("Copied the password: " + myPassword);
 
 }
 
