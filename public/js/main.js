@@ -78,10 +78,10 @@ myBtn.addEventListener("click",()=>{
     checkBoxes()
     password()
     //show new created password
-    inputWithPassword.innerText = myPassword
+    inputWithPassword.innerHTML = `<p>${myPassword}</p><button class="clipboard" onclick="clipboard()"><img src="public/assets/img/icons8-clipboard-24.png" alt="clipboard" class="my-clipboard"></button>`
 })
 
-//there seems to be a problem: Document is not focused
+//there seems to be a problem: "Document is not focused"
 function clipboard() {
 
    // Copy the text inside the text field
